@@ -61,7 +61,7 @@ function transactionHistory(cause,amount,remainingBalance){
     transactionCard.innerHTML = `
                 <div class="flex  justify-between items-center text-center px-2">
                 <p class="text-[#111111]  font-medium text-lg">Cause: ${cause}</p>
-                <p class="text-[#111111]  font-medium text-lg">Amount Donated: <span>${amount} BDT</span></p>
+                <p class="text-[#111111]  font-medium text-lg pl-2 ">Amount Donated: <span>${amount} BDT</span></p>
                 <p class="text-[#111111]  font-medium text-lg pl-2">Remaining Balance: ${remainingBalance} BDT</p>
             </div>
             <p class="text-[#111111]  font-medium text-lg ">Date: ${new Date().toLocaleString('en-US',{ timeZone: 'Asia/Dhaka'})}</p>`;
