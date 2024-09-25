@@ -10,31 +10,32 @@
 
 </head>
 <body>
-    <main class="sticky top-0 shadow-md">
+    <main class="sticky top-0 backdrop-blur-md">
         <nav class=" flex justify-around items-center bg-[#F9F7F3]  pt-3 pb-10">
-            <button class="btn btn-active  bg-[#B4F461] hover:bg-[#a1e84f] border-none font-semibold text-xl text-[#111111]"><a href="blog.html">Blog</a></button>
+            <button id="blog-btn" class="btn btn-active  bg-[#B4F461] hover:bg-[#a1e84f] border-none font-semibold text-xl text-[#111111]">Blog</button>
             <div class=" flex items-center gap-2">
                 <img src="assets/logo.png" alt="" >
                 <span class="font-semibold text-2xl text-[#111111] ">Donate Bangladesh</span>
             </div>
             <div class="flex items-center gap-1">
                 <img src="assets/coin.png" alt="" >
-                <span id="main-balance" class="font-medium text-xl text-[#111111]">5500</span>
+                <span id="main-balance" class="font-medium text-xl text-[#111111]">10500</span>
                 <span class="font-medium text-xl text-[#111111]">BDT</span>
             </div>
         </nav>
-        <div class="flex justify-center gap-3 pt-20 pb-8">
-            <button class="btn btn-success bg-[#B4F461] hover:bg-[#a1e84f] border-none font-semibold text-xl text-[#111111]">Donation</button>
-            <button class="btn btn-success bg-[#B4F461] hover:bg-[#a1e84f] border-none font-semibold text-xl text-[#111111]">History</button>
+        <div class="flex justify-center gap-3 pt-12 pb-8">
+            <button id="donation-btn" class="btn toggle-button btn-success px-5 py-3 rounded-lg bg-[#B4F461] hover:bg-[#a1e84f]  border-none font-semibold text-xl text-[#111111]">Donation</button>
+            <button id="history-btn" class="btn toggle-button btn-success px-5 py-3 rounded-lg bg-[#B4F461] hover:bg-[#a1e84f]  border-none font-semibold text-xl text-[#111111]">History</button>
         </div>
     </main>
-    <section>
+    <section id="index" class="">
+        <!-- card-1 -->
         <div class="flex max-w-4xl shadow-lg bg-white mx-auto border-2 border-[#E7E7E7] rounded-lg p-4 mb-5">
             <div class="w-1/2"><img src="assets/noakhali.png" alt=""></div>
             <div class="flex w-1/2 flex-col justify-between pl-6">
                 <div class=" items-center bg-[#F9F7F3] p-2 rounded-lg flex gap-1">
                     <img src="assets/coin.png" alt="">
-                    <span id="" class="font-normal text-base text-[#111111]">0</span>
+                    <span id="flood-balance" class="font-normal text-base text-[#111111]">3000</span>
                     <span class="font-normal text-base text-[#111111]">BDT</span>
                 </div>
                 <h3 class="text-[#111111]  font-bold text-xl my-1">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -46,16 +47,17 @@
                      in supporting the relief efforts and making a positive
                       impact on the lives of those in need.
                 </p>
-                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                <div><button class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
+                <input id="input-amount-1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                <div><button id="btn-addMoney-1" class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl ">Donate Now</button></div>
             </div>
         </div>
+        <!-- card-2 -->
         <div class="flex max-w-4xl shadow-lg bg-white mx-auto border-2 border-[#E7E7E7] rounded-lg p-4 mb-5">
             <div class="w-1/2"><img src="assets/feni.png" alt=""></div>
             <div class="flex w-1/2 flex-col justify-between pl-6">
                 <div class=" items-center bg-[#F9F7F3] p-2 rounded-lg flex gap-1">
                     <img src="assets/coin.png" alt="">
-                    <span class="font-normal text-base text-[#111111]">600</span>
+                    <span id="feni-balance" class="font-normal text-base text-[#111111]">1200</span>
                     <span class="font-normal text-base text-[#111111]">BDT</span>
                 </div>
                 <h3 class="text-[#111111]  font-bold text-xl my-1">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -67,16 +69,17 @@
                      in supporting the relief efforts and making a positive
                       impact on the lives of those in need.
                 </p>
-                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                <div><button class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
+                <input id="input-amount-2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                <div><button id="btn-addMoney-2" class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
             </div>
         </div>
+        <!-- card-3 -->
         <div class="flex max-w-4xl shadow-lg bg-white mx-auto border-2 border-[#E7E7E7] rounded-lg p-4 mb-5 ">
             <div class="w-1/2"><img src="assets/quota-protest.png" alt=""></div>
             <div class="flex w-1/2 flex-col justify-between pl-6">
                 <div class=" items-center bg-[#F9F7F3] p-2 rounded-lg flex gap-1">
                     <img src="assets/coin.png" alt="">
-                    <span class="font-normal text-base text-[#111111]">2400</span>
+                    <span id="quata-balance" class="font-normal text-base text-[#111111]">2500</span>
                     <span class="font-normal text-base text-[#111111]">BDT</span>
                 </div>
                 <h3 class="text-[#111111]  font-bold text-xl my-1">Aid for Injured in the Quota Movement</h3>
@@ -87,11 +90,147 @@
                        Every donation plays a vital role in alleviating their suffering and aiding in their recovery.
                         Please consider making a donation to support these brave individuals in their time of need.
                 </p>
-                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                <div><button class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
+                <input id="input-amount-3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                <div><button id="btn-addMoney-3" class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
+            </div>
+        </div>
+        <!-- card-4 -->
+        <div class="flex max-w-4xl shadow-lg bg-white mx-auto border-2 border-[#E7E7E7] rounded-lg p-4 mb-5 ">
+            <div class="w-1/2"><img src="assets/rohingya1.jpg" class="rounded-lg" alt=""></div>
+            <div class="flex w-1/2 flex-col justify-between pl-6">
+                <div class=" items-center bg-[#F9F7F3] p-2 rounded-lg flex gap-1">
+                    <img src="assets/coin.png" alt="">
+                    <span id="refugee-balance" class="font-normal text-base text-[#111111]">1200</span>
+                    <span class="font-normal text-base text-[#111111]">BDT</span>
+                </div>
+                <h3 class="text-[#111111]  font-bold text-xl my-1">Food for Rohingya Refugee</h3>
+                <p class="text-[#111111]  font-normal text-opacity-70 text-sm">The ration still falls short of meeting 
+                    their minimum energy and nutritional requirements. Violence, insecurity, and human trafficking are
+                     increasing concerns in the refugee camps. Amidst fires, cyclones, and floods, 2023 also saw the
+                      highest number of Rohingya embarking on dangerous boat journeys. Nearly 4,500 attempted to across 
+                      the Andaman Sea and Bay of Bengal, in the hope of finding a better life. At least 569 of them 
+                      lost their lives.
+                </p>
+                <input id="input-amount-4" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                <div><button id="btn-addMoney-4" class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
+            </div>
+        </div>
+        <!-- card-5 -->
+        <div class="flex max-w-4xl shadow-lg bg-white mx-auto border-2 border-[#E7E7E7] rounded-lg p-4 mb-5 ">
+            <div class="w-1/2"><img src="assets/medical.jpg" class="rounded-lg" alt=""></div>
+            <div class="flex w-1/2 flex-col justify-between pl-6">
+                <div class=" items-center bg-[#F9F7F3] p-2 rounded-lg flex gap-1">
+                    <img src="assets/coin.png" alt="">
+                    <span id="medical-balance" class="font-normal text-base text-[#111111]">1500</span>
+                    <span class="font-normal text-base text-[#111111]">BDT</span>
+                </div>
+                <h3 class="text-[#111111]  font-bold text-xl my-1">Healthcare and Medical Aid</h3>
+                <p class="text-[#111111]  font-normal text-opacity-70 text-sm">Hospitals in Bangladesh play a vital 
+                    role in the country's healthcare system,
+                     providing essential medical services to the population. With a growing emphasis on 
+                     improving healthcare infrastructure, Bangladesh has made significant progress in
+                      expanding access to hospital facilities across the country. According to the World 
+                      Health Organization (WHO),[11] as of 2021, there were approximately 5,146 hospitals
+                       in Bangladesh, including both public and private institutions.
+                </p>
+                <input id="input-amount-5" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                <div><button id="btn-addMoney-5" class="btn btn-success  bg-[#B4F461] hover:bg-[#a1e84f] border-none w-full font-semibold text-xl">Donate Now</button></div>
             </div>
         </div>
     </section>
+    
+    <!-- modal -->
+    <dialog id="my_modal_1" class="modal">
+    <div class="modal-box justify-center items-center text-center flex flex-col">
+        <h3 class="text-4xl font-bold text-[#111111] pb-4">Congrates!</h3>
+        <div><img src="assets/coin.png" alt="" class="w-12 h-12"></div>
+        <p class="py-4 text-[#111111] font-medium text-base opacity-70">You Have Donated For Humankind</p>
+        <span class="font-bold text-[#111111] text-xl">Successfully</span>
+        <div class="modal-action">
+        <form method="dialog">
+            <button class="btn font-normal text-[#111111] text-base">Close Confirmation</button>
+        </form>
+        </div>
+    </div>
+    </dialog>
+    <!-- modal -->
+    <!-- Transaction-start -->
+    <section id="transaction" class="hidden">
+        <div class="justify-center items-center text-center">
+            <h2 class="text-[#111111]  font-bold text-2xl my-4">Transaction History</h2>
+            <div id="history-list" class="flex flex-col gap-4"></div>
+        </div>
+    </section>
+    <!-- Transaction-end -->
+     <!-- blog-start -->
+     <section id="blog" class="max-w-6xl mx-auto hidden">
+        <div class="inline-flex font-medium text-4xl text-[#111111]">
+            <h1 class="font-bold text-4xl text-[#111111]">Important FAQ <span class="text-7xl text-[#a1e84f] font-bold">?</span></h1>
+        </div>
+        <div class="mt-7 border-2 border-[#E7E7E7] rounded-lg p-5 mb-20 ">
+            <div class="faq-item border-b-2 border-[#E7E7E7] mb-3">
+                <button class="faq-question flex w-full justify-between items-center mb-1">
+                    <span class="font-semibold text-xl text-[#111111]">What is the Document Object Model (DOM)?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </button>
+                <div class="faq-answer font-normal text-xl text-[#111111] opacity-80 hidden mb-1">
+                    Document Object Model is a programming interface for web documents.
+                  </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#E7E7E7] mb-3">
+                <button class="faq-question flex w-full justify-between items-center mb-1">
+                    <span class="font-semibold text-xl text-[#111111]">How do you select an element from the DOM?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </button>
+                <div class="faq-answer font-normal text-xl text-[#111111] opacity-80 hidden mb-1">
+                    Use getElementById,querySelector, or querySelectorAll.
+                  </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#E7E7E7] mb-3">
+                <button class="faq-question flex w-full justify-between items-center mb-1">
+                    <span class="font-semibold text-xl text-[#111111]">What is event delegation in the context of the DOM, and why is it useful?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </button>
+                <div class="faq-answer font-normal text-xl text-[#111111] opacity-80 hidden mb-1">
+                    Attach a single event listener to a paresnt.It handles child evnets efficiently.
+                  </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#E7E7E7] mb-3">
+                <button class="faq-question flex w-full justify-between items-center mb-1">
+                    <span class="font-semibold text-xl text-[#111111]">How do you manipulate an element's attributes and styles using the DOM? </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </button>
+                <div class="faq-answer font-normal text-xl text-[#111111] opacity-80 hidden mb-1">
+                    Use setAttribute/getAttribute for attributes and element.style for styles.
+                  </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#E7E7E7] mb-3">
+                <button class="faq-question flex w-full justify-between items-center mb-1">
+                    <span class="font-semibold text-xl text-[#111111]">How do you remove an element from the DOM?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </button>
+                <div class="faq-answer font-normal text-xl text-[#111111] opacity-80 hidden mb-1">
+                    Use element.remove() or parent.removeChild(child). 
+                  </div>
+            </div>
+        </div>
+    </section>
+     <!-- blog-end -->
+
+
+
     <div class="bg-[#F9F7F3] py-12"></div>
+    <script src="utilites.js"></script>
+    <script src="addmoney.js"></script>
 </body>
 </html>
